@@ -1,0 +1,25 @@
+body{
+    background-color: coral;
+}
+
+#parrafoBlanco{ /* esto es un ID */
+    color: white;
+}
+
+.letraGrande{  /* esto es una clase */
+    font-size: 10px;
+}
+
+.margenIzq{ /* esto es una clase */
+    margin-left:10px;
+}
+
+.formatoImagenStandar{
+    border: 10px solid black;
+}
+
+.caja{
+    border:20px solid black;
+    padding:20px;
+    margin:20px;
+}
