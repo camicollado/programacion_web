@@ -1,3 +1,16 @@
 body{
-    background-color: #b5b5b5ff;
+    /*background-color: #c4e7d4;*/
+    background: rgb(227,255,231);
+    background: linear-gradient(180deg, rgba(227,255,231,1) 0%, rgba(217,231,255,1) 100%);
+}
+
+h1,h2,h3,h4 {
+    color: #403a40;
+    font-size: 34px;
+    font-family: 'DM Serif Display', sans-serif;
+}
+
+p {
+    color: #403a40;
+    font-family: 'DM Sans', sans-serif; 
 }
