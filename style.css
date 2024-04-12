@@ -1,7 +1,7 @@
 body{
-    background-color: #c3e7d3ff;
-    /*background: rgb(227,255,231);
-    background: linear-gradient(180deg, rgba(227,255,231,1) 0%, rgba(217,231,255,1) 100%);*/
+    /*background-color: #c3e7d3ff;*/
+    background: rgb(227,255,231);
+    background: linear-gradient(90deg, rgba(227,255,231,1) 0%, rgba(217,231,255,1) 100%);
 }
 
 h1,h2,h3,h4 {
@@ -32,4 +32,26 @@ img {
     height: auto; /* Altura automática para mantener la proporción */
 }
 
+.btn-linkedin {
+    font-family: 'DM Sans', sans;
+    background-color: #b9c0da;
+    border-color: #b9c0da;
+    color: #403a40; /* Cambiar el color del texto del botón a blanco */
+}
 
+.cardProjects{
+    background-color: #c3e7d3ff;
+    border-color: #c3e7d3ff;
+    font-family: 'DM Sans', sans;
+}
+
+.btn-proyects {
+    font-family: 'DM Sans', sans;
+    background-color: #6870a1;
+    border-color: #6870a1;
+}
+
+/* En tu archivo CSS externo */
+.img-portada {
+    margin-top: 50px;
+}
