@@ -1,7 +1,7 @@
 body{
-    /*background-color: #c4e7d4;*/
-    background: rgb(227,255,231);
-    background: linear-gradient(180deg, rgba(227,255,231,1) 0%, rgba(217,231,255,1) 100%);
+    background-color: #c3e7d3ff;
+    /*background: rgb(227,255,231);
+    background: linear-gradient(180deg, rgba(227,255,231,1) 0%, rgba(217,231,255,1) 100%);*/
 }
 
 h1,h2,h3,h4 {
@@ -10,7 +10,26 @@ h1,h2,h3,h4 {
     font-family: 'DM Serif Display', sans-serif;
 }
 
-p {
+.navbar-brand {
     color: #403a40;
-    font-family: 'DM Sans', sans-serif; 
+    font-size: 24px;
+    font-family: 'DM Serif Display', sans-serif;
 }
+
+p, .nav-link {
+    color: #403a40;
+    font-family: 'DM Sans', sans; 
+}
+
+footer {
+    font-family: 'DM Sans', sans;
+    color: #403a40;
+}
+
+/* Cambiar el tamaño de la imagen */
+img {
+    width: 100%; /* Ancho del 100% del contenedor */
+    height: auto; /* Altura automática para mantener la proporción */
+}
+
+

@@ -25,10 +25,10 @@
               <div class="collapse navbar-collapse" id="navbarNav">
                 <ul class="navbar-nav">
                   <li class="nav-item">
-                    <a class="nav-link active" aria-current="page" href="#">Sobre mi</a>
+                    <a class="nav-link active" aria-current="page" href="#about">Sobre mi</a>
                   </li>
                   <li class="nav-item">
-                    <a class="nav-link" href="#">Proyectos</a>
+                    <a class="nav-link" href="#proyects">Proyectos</a>
                   </li>
                   <li class="nav-item">
                     <a class="nav-link" href="#">Contacto</a>
@@ -48,82 +48,54 @@
         </div>
     </section>
     <!-- Presentacion -->
-    <section id="about" class="container mt-4">
+    <section id="presentacion" class="container mt-4">
         <div class="row">
             <div class="col-lg-12">
-                <h3>Hola! Soy Camila Collado. Estudiante de Data Science viviendo en CABA, Argentina.</h3>
+                <h3>Hola! Soy Camila Collado, soy estudiante de Data Science viviendo en CABA, Argentina.</h3>
             </div>
         </div>
     </section>
     <!-- Sobre mi -->
-    <div class="container">
-        <div class="row">
-            <!-- Columna de la izquierda con la grilla de 9 fotos -->
-            <div class="col-md-6">
-                <div class="row">
-                    <div class="col-md-4 mb-3">
-                        <img src="ruta/de/imagen1.jpg" class="img-fluid" alt="Imagen 1">
+    <section id="about" class="container mt-4">
+        <div class="container">
+            <div class="row">
+                <!-- Columna de la izquierda con la grilla de 9 fotos -->
+                <div class="col-md-6">
+                    <div class="row">
+                        <div class="col-md-4 mb-3">
+                            <img src="ruta/de/imagen1.jpg" class="img-fluid" alt="Imagen 1">
+                        </div>
+                        <!-- Repite este div para las otras 8 imágenes -->
+                        <!-- <div class="col-md-4 mb-3">
+                            <img src="ruta/de/imagen2.jpg" class="img-fluid" alt="Imagen 2">
+                        </div> -->
                     </div>
-                    <!-- Repite este div para las otras 8 imágenes -->
-                    <!-- <div class="col-md-4 mb-3">
-                        <img src="ruta/de/imagen2.jpg" class="img-fluid" alt="Imagen 2">
-                    </div> -->
+                </div>
+                <!-- Columna de la derecha con texto -->
+                <div class="col-md-6">
+                    <h2>Sobre mi ...</h2>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec odio. Praesent libero. Sed cursus ante dapibus diam. Sed nisi. Nulla quis sem at nibh elementum imperdiet.</p>
+                    <p>Duis sagittis ipsum. Praesent mauris. Fusce nec tellus sed augue semper porta. Mauris massa. Vestibulum lacinia arcu eget nulla.</p>
+                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nostrum at aperiam similique architecto corrupti aspernatur, illo incidunt exercitationem hic ut sit ratione libero aliquid non tenetur totam distinctio id? Veniam?</p>
                 </div>
             </div>
-            <!-- Columna de la derecha con texto -->
-            <div class="col-md-6">
-                <h2>Sobre mi ...</h2>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec odio. Praesent libero. Sed cursus ante dapibus diam. Sed nisi. Nulla quis sem at nibh elementum imperdiet.</p>
-                <p>Duis sagittis ipsum. Praesent mauris. Fusce nec tellus sed augue semper porta. Mauris massa. Vestibulum lacinia arcu eget nulla.</p>
-                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nostrum at aperiam similique architecto corrupti aspernatur, illo incidunt exercitationem hic ut sit ratione libero aliquid non tenetur totam distinctio id? Veniam?</p>
-            </div>
         </div>
-    </div>
+    </section>
     <!--Mis proyectos-->
-    <section>
+    <section id="proyects">
         <div class="row">
             <div class="col-lg-12">
                 <h3>Mis proyectos</h3>
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas, hic at. Ad reiciendis a neque voluptas eligendi, voluptatem doloribus dicta similique, nostrum autem laudantium quibusdam molestias perspiciatis quam esse laboriosam.</p>
             </div>
         </div>
-        <div id="carouselExampleCaptions" class="carousel slide">
-            <div class="carousel-indicators">
-              <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-              <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
-              <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+        <div class="card" style="width: 18rem;">
+            <img src="..." class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Card title</h5>
+              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+              <a href="#" class="btn btn-primary">Go somewhere</a>
             </div>
-            <div class="carousel-inner">
-              <div class="carousel-item active">
-                <img src="images/portada.jpg" class="d-block w-50" alt="...">
-                <div class="carousel-caption d-none d-md-block">
-                  <h5>First slide label</h5>
-                  <p>Some representative placeholder content for the first slide.</p>
-                </div>
-              </div>
-              <div class="carousel-item">
-                <img src="..." class="d-block w-50" alt="...">
-                <div class="carousel-caption d-none d-md-block">
-                  <h5>Second slide label</h5>
-                  <p>Some representative placeholder content for the second slide.</p>
-                </div>
-              </div>
-              <div class="carousel-item">
-                <img src="..." class="d-block w-50" alt="...">
-                <div class="carousel-caption d-none d-md-block">
-                  <h5>Third slide label</h5>
-                  <p>Some representative placeholder content for the third slide.</p>
-                </div>
-              </div>
-            </div>
-            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
-              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-              <span class="visually-hidden">Previous</span>
-            </button>
-            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
-              <span class="carousel-control-next-icon" aria-hidden="true"></span>
-              <span class="visually-hidden">Next</span>
-            </button>
           </div>
     </section>
     <footer>
