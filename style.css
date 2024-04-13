@@ -26,7 +26,7 @@ h4 {
 }
 
 .navbar-brand {
-    color: #403a40;
+    color: #6870a1;
     font-size: 24px;
     font-family: 'DM Serif Display', sans-serif;
 }
@@ -56,7 +56,7 @@ img {
 
 .cardProjects{
     background-color: #f2f7f5;
-    border-color: #c3e7d3ff;
+    border-color: #f2f7f5;
     font-family: 'DM Sans', sans;
 }
 
@@ -66,7 +66,9 @@ img {
     border-color: #6870a1;
 }
 
-/* En tu archivo CSS externo */
 .img-portada {
     margin-top: 50px;
 }
+
+
+
