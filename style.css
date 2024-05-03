@@ -11,23 +11,24 @@ h1,h2,h3,h4 {
 }
 
 h2 {
-    font-size: 38px;
+    font-size: 26px;
+    font-family: 'DM Sans', sans
 }
 
 h3 {
     color: #6870a1;
-    font-size: 36px;
+    font-size: 32px;
 }
 
 h4 {
     color: #6870a1;
-    font-size: 30px;
+    font-size: 28px;
     font-family: 'DM Serif Display', sans-serif;
 }
 
 .navbar-brand {
     color: #6870a1;
-    font-size: 24px;
+    font-size: 22px;
     font-family: 'DM Serif Display', sans-serif;
 }
 
@@ -69,6 +70,5 @@ img {
 .img-portada {
     margin-top: 50px;
 }
-
 
 
