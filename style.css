@@ -52,7 +52,9 @@ img {
     font-family: 'DM Sans', sans;
     background-color: #b9c0da;
     border-color: #b9c0da;
-    color: #403a40; /* Cambiar el color del texto del botón a blanco */
+    color: #403a40; 
+    margin-top: 10px;
+    margin-bottom: 10px;
 }
 
 .cardProjects{
@@ -71,4 +73,11 @@ img {
     margin-top: 50px;
 }
 
+.form-margen {
+    margin-top: 10px;
+    margin-bottom: 10px;
+
+}
+  
+  
 
