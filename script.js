@@ -51,22 +51,17 @@ let ratingSeleccionado;
 // print de select app
 selectApps.addEventListener('change', function(evento) {
     appSeleccionada = evento.target.value;
-    console.log('App seleccionada:', appSeleccionada);
     
     //print info
     const appEncontrado = resultadosReducidos.find(function(app) {
         return app.app === appSeleccionada;
     });
 
-    console.log(appEncontrado.app); 
-    console.log(appEncontrado.ratingReal); 
-    console.log(appEncontrado.predModelo); 
 });
 
 // print de select rating
 selectRating.addEventListener('change', function(evento) {
     ratingSeleccionado = parseInt(evento.target.value);
-    console.log('Rating seleccionado:', ratingSeleccionado);
 });
 
 let predModelo;
@@ -91,25 +86,28 @@ calcularBtn.addEventListener('click', function() {
 
         // Realizar los cálculos necesarios
 
-        //const difModelo = Math.abs(ratingReal - predModelo);
-        //const difUser = Math.abs(ratingReal - ratingSeleccionado);
-
         if (predModelo === ratingReal && ratingSeleccionado === ratingReal) {
             ganador = "Ambos";
-            console.log('El ganador es:', ganador);
+ 
         } else if (predModelo === ratingReal && ratingSeleccionado !== ratingReal) {
             ganador = "Algoritmo";
-            console.log('El ganador es:', ganador);
+ 
         } else if (predModelo !== ratingReal && ratingSeleccionado === ratingReal) {
             ganador = "Vos";
-            console.log('El ganador es:', ganador);
+     
         } else {
             ganador='Ninguno';
-            console.log('El ganador es:', ganador);
         }
     } else {
         console.log('No se encontró la aplicación seleccionada en los datos.');
     }
+
+    //para la proxima agrego agrego algo de sobre/subestimar el rating de cada app 
+
+    //const difModelo = Math.abs(ratingReal - predModelo);
+    //const difUser = Math.abs(ratingReal - ratingSeleccionado);
+
+
     // Actualizar el contenido en el HTML
     document.getElementById('tuRating').textContent = ratingSeleccionado;
     document.getElementById('ratingAlgoritmo').textContent = predModelo;
