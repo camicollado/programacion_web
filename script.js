@@ -1,3 +1,4 @@
+// Resultados del modelo ML
 const resultadosReducidos = [
     {"app": "Instagram", "predModelo": 4, "ratingReal": 4},
     {"app": "Whatsapp", "predModelo": 4, "ratingReal": 4},
@@ -16,5 +17,29 @@ const resultadosReducidos = [
 
   console.table(resultadosReducidos)
 
-  
-  
+// select app
+const selectApps = document.getElementById('selectApps');
+
+resultadosReducidos.forEach(function(app) {
+  const opcion = document.createElement('option');
+  opcion.text = app.app;
+  selectApps.add(opcion);
+});
+
+
+// select rating
+const selectRating = document.getElementById('selectRating');
+
+const ratings = [
+    {"rating":1},
+    {"rating":2},
+    {"rating":3},
+    {"rating":4},
+    {"rating":5}
+]
+
+ratings.forEach(function(ratings) {
+  const opcion = document.createElement('option');
+  opcion.text = ratings.rating;
+  selectRating.add(opcion);
+});
