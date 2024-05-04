@@ -86,8 +86,8 @@ calcularBtn.addEventListener('click', function() {
 
     // Verificar
     if (resultadoApp) {
-        const ratingReal = resultadoApp.ratingReal;
-        const predModelo = resultadoApp.predModelo;
+        ratingReal = resultadoApp.ratingReal;
+        predModelo = resultadoApp.predModelo;
 
         // Realizar los cálculos necesarios
 
@@ -95,16 +95,17 @@ calcularBtn.addEventListener('click', function() {
         //const difUser = Math.abs(ratingReal - ratingSeleccionado);
 
         if (predModelo === ratingReal && ratingSeleccionado === ratingReal) {
-            const ganador = "Ambos";
+            ganador = "Ambos";
             console.log('El ganador es:', ganador);
         } else if (predModelo === ratingReal && ratingSeleccionado !== ratingReal) {
-            const ganador = "Algoritmo";
+            ganador = "Algoritmo";
             console.log('El ganador es:', ganador);
         } else if (predModelo !== ratingReal && ratingSeleccionado === ratingReal) {
-            const ganador = "Vos";
+            ganador = "Vos";
             console.log('El ganador es:', ganador);
         } else {
-            console.log('Ninguno');
+            ganador='Ninguno';
+            console.log('El ganador es:', ganador);
         }
     } else {
         console.log('No se encontró la aplicación seleccionada en los datos.');
