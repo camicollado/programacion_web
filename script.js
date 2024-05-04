@@ -69,6 +69,9 @@ selectRating.addEventListener('change', function(evento) {
     console.log('Rating seleccionado:', ratingSeleccionado);
 });
 
+let predModelo;
+let ratingReal;
+let ganador;
 
 // Agregar evento de clic al botón de calcular
 calcularBtn.addEventListener('click', function() {
@@ -87,8 +90,10 @@ calcularBtn.addEventListener('click', function() {
         const predModelo = resultadoApp.predModelo;
 
         // Realizar los cálculos necesarios
-        const difModelo = Math.abs(ratingReal - predModelo);
-        const difUser = Math.abs(ratingReal - ratingSeleccionado);
+
+        //const difModelo = Math.abs(ratingReal - predModelo);
+        //const difUser = Math.abs(ratingReal - ratingSeleccionado);
+
         if (predModelo === ratingReal && ratingSeleccionado === ratingReal) {
             const ganador = "Ambos";
             console.log('El ganador es:', ganador);
@@ -104,5 +109,14 @@ calcularBtn.addEventListener('click', function() {
     } else {
         console.log('No se encontró la aplicación seleccionada en los datos.');
     }
+    // Actualizar el contenido en el HTML
+    document.getElementById('tuRating').textContent = ratingSeleccionado;
+    document.getElementById('ratingAlgoritmo').textContent = predModelo;
+    document.getElementById('ratingReal').textContent = ratingReal;
+    document.getElementById('ganador').textContent = ganador;
+
+    // Mostrar los resultados
+    document.querySelector('#resultados').style.display = 'block';
+
 });
 

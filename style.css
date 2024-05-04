@@ -26,6 +26,11 @@ h4 {
     font-family: 'DM Serif Display', sans-serif;
 }
 
+h5 {
+    color: #6870a1;
+    font-size: 20px;
+    font-family: 'DM Serif Display', sans-serif;
+}
 .navbar-brand {
     color: #6870a1;
     font-size: 22px;
