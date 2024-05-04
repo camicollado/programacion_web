@@ -43,3 +43,66 @@ ratings.forEach(function(ratings) {
   opcion.text = ratings.rating;
   selectRating.add(opcion);
 });
+
+// Variables
+let appSeleccionada;
+let ratingSeleccionado;
+
+// print de select app
+selectApps.addEventListener('change', function(evento) {
+    appSeleccionada = evento.target.value;
+    console.log('App seleccionada:', appSeleccionada);
+    
+    //print info
+    const appEncontrado = resultadosReducidos.find(function(app) {
+        return app.app === appSeleccionada;
+    });
+
+    console.log(appEncontrado.app); 
+    console.log(appEncontrado.ratingReal); 
+    console.log(appEncontrado.predModelo); 
+});
+
+// print de select rating
+selectRating.addEventListener('change', function(evento) {
+    ratingSeleccionado = parseInt(evento.target.value);
+    console.log('Rating seleccionado:', ratingSeleccionado);
+});
+
+
+// Agregar evento de clic al botón de calcular
+calcularBtn.addEventListener('click', function() {
+    // valores select
+    appSeleccionada = selectApps.value;
+    ratingSeleccionado = parseInt(selectRating.value); 
+
+    // Buscar en resultadosReducidos la app seleccionada
+    const resultadoApp = resultadosReducidos.find(function(item) {
+        return item.app === appSeleccionada;
+    });
+
+    // Verificar
+    if (resultadoApp) {
+        const ratingReal = resultadoApp.ratingReal;
+        const predModelo = resultadoApp.predModelo;
+
+        // Realizar los cálculos necesarios
+        const difModelo = Math.abs(ratingReal - predModelo);
+        const difUser = Math.abs(ratingReal - ratingSeleccionado);
+        if (predModelo === ratingReal && ratingSeleccionado === ratingReal) {
+            const ganador = "Ambos";
+            console.log('El ganador es:', ganador);
+        } else if (predModelo === ratingReal && ratingSeleccionado !== ratingReal) {
+            const ganador = "Algoritmo";
+            console.log('El ganador es:', ganador);
+        } else if (predModelo !== ratingReal && ratingSeleccionado === ratingReal) {
+            const ganador = "Vos";
+            console.log('El ganador es:', ganador);
+        } else {
+            console.log('Ninguno');
+        }
+    } else {
+        console.log('No se encontró la aplicación seleccionada en los datos.');
+    }
+});
+
