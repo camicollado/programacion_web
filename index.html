@@ -118,6 +118,16 @@
                     </div>
                 </div>
             </div>
+            <div class="col-md-4">
+                <div class="card mb-3">
+                    <!-- Contenido de la primera card -->
+                    <div class="card-body cardProjects">
+                        <h5 class="card-title">Calculadora de créditos UVA</h5>
+                        <p class="card-text">Calcula las primeras 6 cuotas de un crédito UVA con distintos bancos de Argentina.</p>
+                        <a href="/calculadora.html" class="btn btn-dark btn-primary btn-special">¡Probalo!</a>
+                    </div>
+                </div>
+            </div>
         </div>
     </section>
 
@@ -175,24 +185,34 @@
         </div>
             <div class="container">
                 <h2>Envíame un email :)</h2>
-                <form target="_blank" action="https://formsubmit.co/cami.collado@gmail.com" method="POST">
+                <form action="confirmacion.html">
                   <div class="form-group">
                     <div class="form-row">
                       <div class="col form-margen">
                         <input type="text" name="name" class="form-control" placeholder="Tu nombre" required>
                       </div>
                       <div class="col form-margen">
-                        <input type="email" name="email" class="form-control" placeholder="Tu Email" required>
+                        <input type="email" name="email" class="form-control" placeholder="Tu Email" required pattern="^[\w-\.]+@([\w-]+\.)+[\w-]{2,4}$">
                       </div>
                     </div>
                   </div>
                   <div class="form-group">
                     <textarea placeholder="Escribí tu mensaje!" class="form-control" name="message" rows="10" required></textarea>
                   </div>
-                  <button type="submit" class="btn btn-md btn-dark btn-block btn-linkedin ">Enviar</button>
+                  <button type= "submit" class="btn btn-md btn-dark btn-block btn-linkedin">Enviar</button>
                 </form>
               </div>
+          </body>
     </section>
+
+
+    <!-- Modal de confirmación -->
+    <div id="confirmationModal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <p>Tu mensaje fue enviado exitosamente</p>
+        </div>
+    </div>
     <footer>
         <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2);">
             © Camila Collado 2024. 
