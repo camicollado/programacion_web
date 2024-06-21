@@ -94,3 +94,9 @@ img {
 .portada{
     text-align: center;
 }
+
+.p-mapa{
+    font-size: 16px;
+    color: #403a40;
+    font-family: 'DM Sans', sans; 
+}
