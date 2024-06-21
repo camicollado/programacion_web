@@ -64,9 +64,37 @@ selectRating.addEventListener('change', function(evento) {
     ratingSeleccionado = parseInt(evento.target.value);
 });
 
+// Función para verificar si los campos están llenos
+function verificarCampos() {
+    if (appSeleccionada && ratingSeleccionado) {
+        calcularBtn.disabled = false;
+    } else {
+        calcularBtn.disabled = true;
+    }
+}
+
+// print de select app
+selectApps.addEventListener('change', function(evento) {
+    appSeleccionada = evento.target.value;
+    
+    // Verificar si los campos están llenos
+    verificarCampos();
+});
+
+// print de select rating
+selectRating.addEventListener('change', function(evento) {
+    ratingSeleccionado = parseInt(evento.target.value);
+    
+    // Verificar si los campos están llenos
+    verificarCampos();
+});
+
+
 let predModelo;
 let ratingReal;
 let ganador;
+
+calcularBtn.disabled = true;
 
 // Agregar evento de clic al botón de calcular
 calcularBtn.addEventListener('click', function() {
@@ -101,12 +129,6 @@ calcularBtn.addEventListener('click', function() {
     } else {
         console.log('No se encontró la aplicación seleccionada en los datos.');
     }
-
-    //para la proxima agrego agrego algo de sobre/subestimar el rating de cada app 
-
-    //const difModelo = Math.abs(ratingReal - predModelo);
-    //const difUser = Math.abs(ratingReal - ratingSeleccionado);
-
 
     // Actualizar el contenido en el HTML
     document.getElementById('tuRating').textContent = ratingSeleccionado;
