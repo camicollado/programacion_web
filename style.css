@@ -80,10 +80,6 @@ img {
     border-color: #859fff;
 }
 
-.img-portada {
-    margin-top: 50px;
-}
-
 .form-margen {
     margin-top: 10px;
     margin-bottom: 10px;
@@ -94,3 +90,7 @@ img {
     margin-top: 50px;
     margin-bottom: 10px;
 }  
+
+.portada{
+    text-align: center;
+}
